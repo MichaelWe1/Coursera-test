@@ -22,7 +22,8 @@ header {
 .section {
   background-color: #FFE4E1;
   width: 31%;
-  margin: 10px;
+  margin: 1%;
+  position: relative;
   border: 1px solid black;
 }
 
@@ -71,18 +72,20 @@ header {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .section {
-    width: 50%;
-	margin: 0px;
+    float: left;
+    width: 48%;
 
   }
   .section:nth-child(3) {
-    width: 100%;
+    clear: left;
+    width: 98%;
   }
 }
 
 @media (max-width: 767px) {
   .section {
     width: 100%;
-	margin: 5px
+    margin: auto;
+    margin-bottom: 15px;
   }
 }
