@@ -1,7 +1,9 @@
-body {
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 
 header {
   text-align: center;
@@ -9,39 +11,78 @@ header {
   padding: 20px;
 }
 
-h1 {
-  margin: 0;
+
+.container {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-section {
-  float: left;
-  box-sizing: border-box;
-  width: 33.33%;
-  padding: 20px;
-  border: 1px solid #000;
+
+.section {
+  background-color: #FFE4E1;
+  width: 31%;
+  margin: 10px;
+  border: 1px solid black;
 }
 
-.section-title {
+
+.section-titleC {
   position: relative;
-  top: 0;
-  right: 0;
-  background-color: #f00;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 0;
+  padding: 10px;
+  background-color: lightgreen; 
+  color: #000000;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black; 
+  float: right;
+  width: 100px; 
+  text-align:center;
+}
+.section-titleB {
+  position: relative;
+  padding: 10px;
+  background-color: #FFC0CB; 
+  color: #000000;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black; 
+  float: right;
+  width: 100px; 
+  text-align:center;
+}
+.section-titleS {
+  position: relative;
+  padding: 10px;
+  background-color: lightblue; 
+  color: #000000;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black; 
+  float: right;
+  width: 100px; 
+  text-align:center;
 }
 
-p {
-  margin: 10px 0;
+
+.section-content {
+  padding:20px;
+  background-color: #FFE4E1; 
+  color: #000000;
 }
 
-@media screen and (max-width: 991px) {
-  .desktop {
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
     width: 50%;
+	margin: 0px;
+
   }
-  
-  @media screen and (max-width: 767px) {
-  .desktop {
+  .section:nth-child(3) {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+	margin: 5px
   }
 }
