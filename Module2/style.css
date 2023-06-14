@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+section {
+  float: left;
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.section-title {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: #f00;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 991px) {
+  .desktop {
+    width: 50%;
+  }
+  
+  @media screen and (max-width: 767px) {
+  .desktop {
+    width: 100%;
+  }
+}
